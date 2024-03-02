@@ -27,12 +27,11 @@ try:
 except Exception as e:
     print(f"An error occurred: {str(e)}")    
 sys.exit()
-# read file_content into pandas and print 30 records
+print ("File content has been successfully downloaded.")
 
-#df = pd.read_csv(StringIO(file_content)) # convert string content to dataframe object
-#print("Dataframe created successfully.")
-#print(df)
-
+#read file_content into pandas and print 30 records
+df = pd.read_csv(file_content)
+print("First 30 Records:\n", df.head(30))
 
 
 
